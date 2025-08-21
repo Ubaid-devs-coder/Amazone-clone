@@ -1,3 +1,5 @@
+import {cart} from '../data/cart.js'
+
 // Save the data (products.js => for products objects)
    // save data (cart.js => for cart objects)
 
@@ -96,10 +98,6 @@ document.querySelectorAll('.js-add-to-cart')
 
       document.querySelector('.js-cart-quantity')
         .innerHTML = cartQuantity
-
-      console.log(cartQuantity)
-
-      console.log(cart)
     })
   })
 
