@@ -1,4 +1,5 @@
 import {cart} from '../data/cart.js'
+import {products} from '../data/products.js'
 
 // Save the data (products.js => for products objects)
    // save data (cart.js => for cart objects)
