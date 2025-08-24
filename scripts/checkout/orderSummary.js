@@ -4,14 +4,8 @@ import { formatCurrency } from '../utils/money.js'
 import { hello } from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js'
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js'
 import { deliveryOptions, getDilveryOption } from '../../data/dileveryOptions.js'
+import { renderPaymentSummary } from './paymentSummary.js'
 
-
-
-hello()
-
-const today = dayjs()
-const deliveryDate = today.add(7, 'days')
-console.log(deliveryDate.format('dddd, MMMM, D'))
 
 export function renderOrederSummary() {
   let cartSummaryHTML = ''
@@ -124,6 +118,8 @@ export function renderOrederSummary() {
 
         const container = document.querySelector(`.js-card-item-container${productId}`)
         container.remove()
+
+        renderPaymentSummary()
       })
     })
 
@@ -135,6 +131,7 @@ export function renderOrederSummary() {
         const { productId, deliveryOptionId } = element.dataset
         updateDeliveryOption(productId, deliveryOptionId)
         renderOrederSummary()
+        renderPaymentSummary()
       })
     })
 }
