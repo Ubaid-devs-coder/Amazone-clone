@@ -1,3 +1,6 @@
+//  Testing frameworks Jasmine , Jest for(ReactJS)
+
+
 import {formatCurrency} from '../scripts/utils/money.js'
 
 console.log('test suit: formatcurrency')
