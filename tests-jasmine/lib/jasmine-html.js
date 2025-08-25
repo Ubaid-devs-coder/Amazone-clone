@@ -21,7 +21,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 // eslint-disable-next-line no-var
-var jasmineRequire = window.jasmineRequire || require('./jasmine.js');
+var jasmineRequire = window.jasmineRequire || require('../lib/lib/lib/jasmine.js');
 
 jasmineRequire.html = function(j$) {
   j$.ResultsNode = jasmineRequire.ResultsNode();
