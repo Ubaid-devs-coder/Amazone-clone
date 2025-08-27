@@ -1,17 +1,21 @@
 import { cart, addToCart } from '../data/cart.js'
-import { products } from '../data/products.js'
+import { products, loadProducts } from '../data/products.js'
 import { formatCurrency } from './utils/money.js'
 
 // Save the data (products.js => for products objects)
 // save data (cart.js => for cart objects)
 
 
+loadProducts(renderProductsGrid)
+
 // Generate the Html with loop
 
-let productsHTML = ''
+function renderProductsGrid() {
 
-products.forEach((product) => {
-  productsHTML += `
+  let productsHTML = ''
+
+  products.forEach((product) => {
+    productsHTML += `
    <div class="product-container">
           <div class="product-image-container">
             <img class="product-image"
@@ -65,33 +69,33 @@ products.forEach((product) => {
         </div>
   `
 
-})
-
-
-// Add cards in container
-document.querySelector('.js-products-grid').innerHTML = productsHTML
-
-function updateCartQuantity() {
-  let cartQuantity = 0
-
-  cart.forEach((cartItem) => {
-    cartQuantity += cartItem.quantity
   })
 
-  document.querySelector('.js-cart-quantity')
-    .innerHTML = cartQuantity
-}
 
-// button add to cart and make it intractive
-document.querySelectorAll('.js-add-to-cart')
-  .forEach((button) => {
-    button.addEventListener('click', () => {
-      const productId = button.dataset.productId
+  // Add cards in container
+  document.querySelector('.js-products-grid').innerHTML = productsHTML
 
-      addToCart(productId)
+  function updateCartQuantity() {
+    let cartQuantity = 0
 
-      updateCartQuantity()
-
+    cart.forEach((cartItem) => {
+      cartQuantity += cartItem.quantity
     })
-  })
 
+    document.querySelector('.js-cart-quantity')
+      .innerHTML = cartQuantity
+  }
+
+  // button add to cart and make it intractive
+  document.querySelectorAll('.js-add-to-cart')
+    .forEach((button) => {
+      button.addEventListener('click', () => {
+        const productId = button.dataset.productId
+
+        addToCart(productId)
+
+        updateCartQuantity()
+
+      })
+    })
+}
