@@ -7,7 +7,7 @@ import { deliveryOptions, getDilveryOption } from '../../data/dileveryOptions.js
 import { renderPaymentSummary } from './paymentSummary.js'
 
 
-export function renderOrederSummary() {
+export function renderOrderSummary() {
   let cartSummaryHTML = ''
 
   cart.forEach((cartItem) => {
@@ -130,7 +130,7 @@ export function renderOrederSummary() {
          const deliveryOptionId = element.dataset.deliveryOptionId */
         const { productId, deliveryOptionId } = element.dataset
         updateDeliveryOption(productId, deliveryOptionId)
-        renderOrederSummary()
+        renderOrderSummary()
         renderPaymentSummary()
       })
     })
