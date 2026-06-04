@@ -15,125 +15,129 @@
 ## 📖 About The Project
 
 The **JavaScript Amazon Clone** is a fully functional e-commerce web application inspired by Amazon.  
-It is built using **HTML, CSS, and JavaScript**, and simulates a real-world online shopping experience.
+It is built using **HTML, CSS, and JavaScript**, simulating a real-world shopping experience.
 
-This project includes product listing, cart management, checkout flow, order placement, and order tracking features. It also uses **Jasmine unit testing** to ensure reliability of core functionality.
+---
+
+## 🎥 Demo
+
+> Add your project demo GIF or video here
+
+```md
+![Demo](./images/demo.gif)
+```
 
 ---
 
 ## 🎯 Key Highlights
 
-- 🛍️ Real-world e-commerce UI/UX experience
-- 🛒 Fully functional shopping cart system
-- 💳 Checkout system with order & payment summary
-- 🚚 Order tracking system
-- 🧠 Modular JavaScript architecture
-- 🧪 Unit testing using Jasmine
-- 📦 Clean and maintainable code structure
+- 🛍️ Real-world e-commerce UI/UX experience  
+- 🛒 Fully functional shopping cart system  
+- 💳 Checkout system with order & payment summary  
+- 🚚 Order tracking system  
+- 🧠 Modular JavaScript architecture  
+- 🧪 Unit testing using Jasmine  
+- 📦 Clean and maintainable code  
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|--------|-------------|
-| 🛍️ Product Listing | Dynamic products loaded from JSON data |
-| 🛒 Cart System | Add, remove, and update products in cart |
-| 📦 Delivery Options | Choose different delivery methods |
-| 💳 Checkout Page | Displays order summary and payment calculation |
-| 🚚 Order Tracking | Track placed orders in real-time flow |
-| 🧠 Modular Code | Separate files for better scalability |
-| 🧪 Unit Testing | Jasmine tests for cart and checkout logic |
+- 🛍️ Product Listing from JSON data  
+- 🛒 Add / Remove from Cart  
+- 📦 Delivery Options per product  
+- 💳 Checkout & Payment Calculation  
+- 🚚 Order Tracking Page  
+- 🧪 Jasmine Unit Tests  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- HTML5 – Structure of the application  
-- CSS3 – Styling and layout  
-- JavaScript (ES6+) – Core logic and functionality  
-- Jasmine – Unit testing framework  
-- JSON – Product data handling  
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- Jasmine (Testing Framework)  
+- JSON Data Handling  
 
 ---
 
 ## 📂 Project Structure
 
-## 📂 Project Structure
-
-
+```
 javascript-amazon-project/
-├── backend/ # Product JSON data
-├── data/ # Core logic (cart, orders, products)
-├── scripts/ # Frontend JS (Amazon, checkout, utils)
-├── styles/ # CSS files (pages + shared styles)
-├── images/ # Icons, product images, ratings
-├── tests/ # Jasmine unit tests
-├── amazon.html # Home page
-├── checkout.html # Checkout page
-├── orders.html # Orders page
-└── tracking.html # Order tracking page
+├── backend/
+├── data/
+├── scripts/
+├── styles/
+├── images/
+├── tests/
+├── amazon.html
+├── checkout.html
+├── orders.html
+└── tracking.html
+```
 
 ---
 
 ## 🚀 Getting Started
 
-### 📋 Requirements
-- Any modern web browser (Chrome recommended)
-- VS Code (optional)
-
----
-
-### 🔧 Installation
-
-Clone the repository:
-
+### Clone Repo
 ```bash
 git clone https://github.com/YourGitHubUsername/javascript-amazon-project.git
 cd javascript-amazon-project
+```
 
-▶️ Run Project
-
+### Run Project
 Simply open:
-
+```
 amazon.html
-OR use Live Server extension in VS Code for best experience.
+```
 
-🧠 What I Learned
-DOM manipulation in JavaScript
-Modular JavaScript architecture
-Cart & checkout logic design
-Handling JSON-based data
-Writing unit tests using Jasmine
-Building real-world e-commerce flow
+OR use Live Server in VS Code.
 
-🔮 Future Improvements
+---
 
-👤 User authentication system
-🌐 Backend integration (Node.js + MongoDB)
-🔍 Product search and filters
-❤️ Wishlist feature
-📱 Mobile app version
-💳 Payment gateway integration
-👨‍💻 Author
+## 🧠 What I Learned
 
-Ubaid Ur Rehman
-MERN Stack Developer | Frontend & Backend Enthusiast
+- DOM Manipulation  
+- Modular JavaScript Architecture  
+- Cart & Checkout Logic  
+- JSON Data Handling  
+- Unit Testing with Jasmine  
+- Real-world E-commerce Flow  
 
-GitHub: https://github.com/YourGitHubUsername
-LinkedIn: https://linkedin.com/in/your-profile
+---
 
-⭐ Support
+## 🔮 Future Improvements
 
-If you like this project, don’t forget to star ⭐ the repository.
+- 👤 Authentication System  
+- 🌐 Backend (Node.js + MongoDB)  
+- 🔍 Search & Filters  
+- ❤️ Wishlist Feature  
+- 📱 Mobile App Version  
+- 💳 Payment Gateway Integration  
+
+---
+
+## 👨‍💻 Author
+
+**Ubaid Ur Rehman**  
+MERN Stack Developer  
+
+GitHub: https://github.com/YourGitHubUsername  
+LinkedIn: https://linkedin.com/in/your-profile  
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
 
 <div align="center">
 
 Built with ❤️ by Ubaid Ur Rehman
 
-</div> ```
-
-If you want next level upgrade, I can also:
-
-🔥 Make your README GitHub trending style (super advanced UI)
-🚀 Add GIF demo
+</div>
